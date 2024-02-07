@@ -1,0 +1,64 @@
+/* styleinfo.css */
+
+body {
+    color: #0d0c0c;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #151320;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+.menu {
+    display: none;
+    background-color: #333;
+    padding: 15px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.tabContent {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Добавьте этот стиль, чтобы убрать подчеркивания у ссылок */
+a {
+    text-decoration: none;
+}
+
+/* Опционально: стилизуйте цвет ссылок при наведении */
+a:hover {
+    color: #34db55; /* Измените цвет, если нужно */
+}
+

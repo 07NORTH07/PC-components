@@ -1,0 +1,22 @@
+/* styles-for-box.css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.box {
+    position: absolute; /* Добавлено для абсолютного позиционирования */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    color: white;
+    background-color: #000;
+    font-weight: 700;
+    line-height: 400px;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}

@@ -1,0 +1,123 @@
+body {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 50px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, DeepPink, BlueViolet, Indigo, Red, DarkOrange, Yellow, Lime, MediumAquaMarine, Aqua, Blue, Olive);
+    background-size: 400% 400%;
+    animation: move 10s ease infinite;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0
+         0;
+    }
+    25% {
+        background-position: 110%
+         0;
+    }
+    50% {
+        background-position: 100%
+         100%;
+    }
+    75% {
+        background-position: 0
+         100%;
+    }
+    1000% {
+        background-position: 0
+         0;
+    }
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+.menu {
+    display: none;
+    background-color: #333;
+    padding: 15px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.tabContent {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.theme-button {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    /* Цвет текста кнопок, можете изменить */
+    background-color: #555;
+    /* Цвет фона кнопок, можете изменить */
+}
+
+.light-theme {
+    background-color: white;
+    /* Цвет фона при активированном классе light-theme */
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    padding: 250px;
+}
+
+p {
+    text-align: center;
+    padding: 0px;
+}
+
+/* Добавьте этот стиль, чтобы убрать подчеркивания у ссылок */
+a {
+    text-decoration: none;
+}
+
+/* Опционально: стилизуйте цвет ссылок при наведении */
+a:hover {
+    color: #34db55;
+    /* Измените цвет, если нужно */
+}

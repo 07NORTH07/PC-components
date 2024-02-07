@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="csscomponents.css">
+  <title>Конфигурация ПК</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <button class="theme-button" onclick="toggleTheme()">Dark / Light</button>
+  </div>
+
+  <div class="menu" id="menu">
+    <a href="home.html" onclick="openTab('pcTab')">Home</a>
+    <a href="components.html" onclick="openTab('componentsTab')">PC Components</a>
+    <a href="info.html" onclick="openTab('descriptionTab')">Information</a>
+  </div>
+
+  <script src="jscomponents.js"></script>
+
+  <div class="icon-links-container">
+    <div class="icon-links">
+      <a href="deska.html" class="icon-link"><i class="fas fa-motherboard"></i> Základní deska</a>
+      <a href="cpu.html" class="icon-link"><i class="fas fa-microchip"></i> CPU</a>
+      <a href="chlazeni.html" class="icon-link"><i class="fas fa-fan"></i> Chlazení</a>
+      <a href="ram.html" class="icon-link"><i class="fas fa-memory"></i> RAM</a>
+      <a href="gpu.html" class="icon-link"><i class="fas fa-video"></i> GPU</a>
+      <a href="power.html" class="icon-link"><i class="fas fa-plug"></i> Zdroj napájení</a>
+      <a href="ssd.html" class="icon-link"><i class="fas fa-hdd"></i> SSD</a>
+      <a href="network.html" class="icon-link"><i class="fas fa-network-wired"></i> Síťová karta</a>
+      <a href="sound.html" class="icon-link"><i class="fas fa-volume-up"></i> Zvuková karta</a>
+      <a href="case.html" class="icon-link"><i class="fas fa-desktop"></i> Skříň</a>
+    </div>
+  </div>
+
+<h1>PC components</h1>
+
+  <div id="pcTab" class="tabContent" style="display:none;">
+    <!-- Содержимое вкладки Главная -->
+  </div>
+
+  <div id="componentsTab" class="tabContent" style="display:none;">
+    <!-- Содержимое вкладки Компоненты ПК -->
+  </div>
+
+  <div id="descriptionTab" class="tabContent" style="display:none;">
+    <!-- Содержимое вкладки Информация -->
+  </div>
+</body>
+</html>

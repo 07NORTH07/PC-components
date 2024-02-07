@@ -1,0 +1,35 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="csshome.css">
+  <title>Конфигурация ПК</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <button class="theme-button" onclick="toggleTheme()">Light / Dark</button>
+  </div>
+
+  <div class="menu" id="menu">
+    <a href="home.html" onclick="openTab('pcTab')">Home</a>
+    <a href="components.html" onclick="openTab('componentsTab')">PC components</a>
+    <a href="info.html" onclick="openTab('descriptionTab')">Information</a>
+  </div>
+
+  <script src="jshome.js"></script>
+
+  <h1>
+    Vítejte na mé webové stránce věnované PC komponentům!</h1>
+
+</body>
+
+</html>

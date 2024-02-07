@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleinfo.css">
+    <link rel="stylesheet" href="css/styles-for-box.css">
+    <title>Конфигурация ПК</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <a href="home.html" onclick="openTab('pcTab')">Home</a>
+        <a href="components.html" onclick="openTab('componentsTab')">PC components</a>
+        <a href="info.html" onclick="openTab('descriptionTab')">Information</a>
+    </div>
+
+    <script src="jsinfo.js"></script>
+
+    <div id="pcTab" class="tabContent" style="display:none;">
+        <!-- Содержимое вкладки Главная -->
+        Содержимое Главной
+    </div>
+
+    <div id="componentsTab" class="tabContent" style="display:none;">
+        <!-- Содержимое вкладки Компоненты ПК -->
+        Содержимое Компонентов ПК
+    </div>
+
+    <div id="descriptionTab" class="tabContent" style="display:none;">
+        <!-- Содержимое вкладки Информация -->
+        Содержимое Информации
+    </div>
+
+        <div class="box">glfdgjdflgfd</div>
+</body>
+</html>
