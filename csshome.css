@@ -6,7 +6,13 @@ body {
 }
 
 h1 {
-    font-size: 50px;
+    text-align: center;
+    padding: 180px;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 100px;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -99,11 +105,6 @@ h1 {
     background-color: white;
     /* Цвет фона при активированном классе light-theme */
     color: black;
-}
-
-h1 {
-    text-align: center;
-    padding: 250px;
 }
 
 p {

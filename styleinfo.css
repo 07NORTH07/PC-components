@@ -1,7 +1,7 @@
 /* styleinfo.css */
 
 body {
-    color: #0d0c0c;
+    color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #151320;
@@ -62,3 +62,53 @@ a:hover {
     color: #34db55; /* Измените цвет, если нужно */
 }
 
+.box {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    color: #fff;
+    background: #000;
+    font: 700;
+    line-height: 400px;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 120px auto 0;
+}
+
+.box a {
+color: white;
+}
+
+.box a:hover {
+    color: #00ff00;
+}
+
+.box::before,
+.box::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    top: -15px;
+    left: -15px;
+    border-radius: 8px;
+    background: linear-gradient( 45deg, #fff000,#00ff00, #0099ff, #001aff,#ff0000,#ff0055, #ff0000,#0099ff,#00a1ff, #a200ff
+);
+background-size: 300%;
+animation: border 12s linear infinite;
+}
+.box::after {
+    filter: blur(50px);
+}
+@keyframes border {
+    0%,100%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 300%;
+    }
+}
